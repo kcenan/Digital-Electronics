@@ -1,6 +1,6 @@
 # Digital-Electronics
 
-Hosts Digital Circuits and Fabrication Technologies project @KocUniversity
+Hosts Digital Circuits and Fabrication Technologies course project @KocUniversity
 
 Course include principles of MOS transistors and the Characteristics. Principles of MOS Digital Gates & Circuits. CMOS Circuits and Logic (layout) Design. CMOS Gate Circuits and the Analysis. Junction Diodes, switching transient, and Diode Circuits. BJT modes of Operation & Charge-control analysis. BJT, Digital DTL & TTL Gate Circuits. ECL & (Schottky) I2L Gates. Regenerative Logic Circuits. Sample and Hold Circuits and Data Converters. Semiconductor Memories and the Circuit Analysis. Introduction to LSI & VLSI circuit Design.
 
