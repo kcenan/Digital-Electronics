@@ -1,0 +1,12 @@
+* SPICE3 file created from inv8x.ext - technology: scmos
+
+m1000 out in vdd vdd pfet w=48u l=20u
++ ad=1632p pd=164u as=1632p ps=164u 
+m1001 out in gnd Gnd nfet w=16u l=20u
++ ad=544p pd=100u as=544p ps=100u 
+C0 vdd in 44.6fF
+C1 vdd out 42.2fF
+C2 gnd GND 464.4fF
+C3 out GND 483.9fF
+C4 in GND 462.7fF
+C5 vdd GND 1658.9fF

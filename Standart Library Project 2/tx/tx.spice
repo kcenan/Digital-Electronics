@@ -1,0 +1,21 @@
+* SPICE3 file created from tx.ext - technology: scmos
+
+m1000 a_6_n288# S vdd vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=13056p ps=836u 
+m1001 out a_6_n288# in vdd pfet w=90u l=20u
++ ad=7920p pd=356u as=8100p ps=360u 
+m1002 a_6_n288# S gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=4352p ps=324u 
+m1003 out S in Gnd nfet w=30u l=20u
++ ad=2640p pd=236u as=2700p ps=240u 
+C0 vdd S 27.4fF
+C1 S a_6_n288# 21.1fF
+C2 vdd out 1046.9fF
+C3 vdd a_6_n288# 407.8fF
+C4 vdd in 1046.9fF
+C5 gnd GND 927.2fF
+C6 out GND 1384.2fF
+C7 in GND 1384.2fF
+C8 a_6_n288# GND 437.5fF
+C9 S GND 721.0fF
+C10 vdd GND 711.2fF

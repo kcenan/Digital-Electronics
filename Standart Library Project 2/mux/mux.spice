@@ -1,0 +1,36 @@
+* SPICE3 file created from mux.ext - technology: scmos
+
+m1000 a_6_n288# s vdd vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=13056p ps=836u 
+m1001 out a_6_n288# A vdd pfet w=90u l=20u
++ ad=15840p pd=712u as=8100p ps=360u 
+m1002 out s B vdd pfet w=90u l=20u
++ ad=0p pd=0u as=8100p ps=360u 
+m1003 a_6_n288# s gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=4352p ps=324u 
+m1004 out s A Gnd nfet w=30u l=20u
++ ad=5280p pd=472u as=2700p ps=240u 
+m1005 out a_6_n288# B Gnd nfet w=30u l=20u
++ ad=0p pd=0u as=2700p ps=240u 
+C0 s B 21.1fF
+C1 vdd out 2093.8fF
+C2 vdd a_6_n288# 407.8fF
+C3 s out 563.6fF
+C4 vdd A 1046.9fF
+C5 s a_6_n288# 156.1fF
+C6 s A 76.1fF
+C7 a_6_n288# gnd 33.6fF
+C8 out B 89.9fF
+C9 a_6_n288# B 27.2fF
+C10 A B 43.3fF
+C11 a_6_n288# out 83.2fF
+C12 vdd s 67.3fF
+C13 a_6_n288# A 120.6fF
+C14 vdd B 1046.9fF
+C15 gnd GND 1178.2fF
+C16 B GND 1527.0fF
+C17 out GND 2890.8fF
+C18 A GND 1509.7fF
+C19 a_6_n288# GND 801.7fF
+C20 s GND 874.4fF
+C21 vdd GND 962.2fF

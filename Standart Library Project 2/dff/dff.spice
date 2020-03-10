@@ -1,0 +1,101 @@
+* SPICE3 file created from dff.ext - technology: scmos
+
+m1000 a_6_n288# clk vdd vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=104448p ps=6688u 
+m1001 a_242_n322# clk in vdd pfet w=90u l=20u
++ ad=15840p pd=712u as=8100p ps=360u 
+m1002 a_565_n288# a_242_n322# vdd vdd pfet w=384u l=20u
++ ad=21156p pd=1196u as=0p ps=0u 
+m1003 a_870_n288# a_565_n288# vdd vdd pfet w=384u l=20u
++ ad=21156p pd=1196u as=0p ps=0u 
+m1004 a_1167_n288# clk vdd vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=0p ps=0u 
+m1005 a_242_n322# a_1167_n288# a_870_n288# vdd pfet w=90u l=20u
++ ad=0p pd=0u as=0p ps=0u 
+m1006 a_1718_n288# clk vdd vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=0p ps=0u 
+m1007 a_1954_n322# a_1718_n288# a_565_n288# vdd pfet w=90u l=20u
++ ad=15840p pd=712u as=0p ps=0u 
+m1008 out a_1954_n322# vdd vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=0p ps=0u 
+m1009 a_2574_n288# out vdd vdd pfet w=384u l=20u
++ ad=21156p pd=1196u as=0p ps=0u 
+m1010 a_2871_n288# clk vdd vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=0p ps=0u 
+m1011 a_1954_n322# clk a_2574_n288# vdd pfet w=90u l=20u
++ ad=0p pd=0u as=0p ps=0u 
+m1012 a_6_n288# clk gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=34816p ps=2592u 
+m1013 a_565_n288# a_242_n322# gnd Gnd nfet w=128u l=20u
++ ad=7052p pd=564u as=0p ps=0u 
+m1014 a_870_n288# a_565_n288# gnd Gnd nfet w=128u l=20u
++ ad=7052p pd=564u as=0p ps=0u 
+m1015 a_1167_n288# clk gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=0p ps=0u 
+m1016 a_242_n322# a_6_n288# in Gnd nfet w=30u l=20u
++ ad=5280p pd=472u as=2700p ps=240u 
+m1017 a_1718_n288# clk gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=0p ps=0u 
+m1018 a_242_n322# clk a_870_n288# Gnd nfet w=30u l=20u
++ ad=0p pd=0u as=0p ps=0u 
+m1019 out a_1954_n322# gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=0p ps=0u 
+m1020 a_2574_n288# out gnd Gnd nfet w=128u l=20u
++ ad=7052p pd=564u as=0p ps=0u 
+m1021 a_2871_n288# clk gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=0p ps=0u 
+m1022 a_1954_n322# clk a_565_n288# Gnd nfet w=30u l=20u
++ ad=5280p pd=472u as=0p ps=0u 
+m1023 a_1954_n322# a_2871_n288# a_2574_n288# Gnd nfet w=30u l=20u
++ ad=0p pd=0u as=0p ps=0u 
+C0 clk a_565_n288# 178.6fF
+C1 vdd a_1718_n288# 407.8fF
+C2 clk in 76.1fF
+C3 a_565_n288# a_1718_n288# 21.1fF
+C4 clk a_2574_n288# 135.0fF
+C5 out a_2871_n288# 41.6fF
+C6 clk a_870_n288# 113.4fF
+C7 clk out 290.7fF
+C8 clk a_1167_n288# 42.1fF
+C9 vdd a_1954_n322# 2121.1fF
+C10 vdd a_242_n322# 2121.1fF
+C11 clk a_2871_n288# 16.8fF
+C12 vdd a_6_n288# 7.6fF
+C13 a_242_n322# a_565_n288# 164.3fF
+C14 a_1954_n322# a_2574_n288# 94.5fF
+C15 a_6_n288# in 34.0fF
+C16 vdd a_565_n288# 1081.8fF
+C17 vdd in 1046.9fF
+C18 a_242_n322# a_870_n288# 99.0fF
+C19 clk a_1718_n288# 46.8fF
+C20 vdd a_2574_n288# 1054.4fF
+C21 a_1954_n322# out 116.7fF
+C22 vdd a_870_n288# 1054.4fF
+C23 a_242_n322# a_1167_n288# 25.7fF
+C24 a_565_n288# a_870_n288# 99.0fF
+C25 vdd out 34.9fF
+C26 vdd a_1167_n288# 407.8fF
+C27 a_565_n288# a_1167_n288# 25.7fF
+C28 a_1954_n322# a_2871_n288# 39.7fF
+C29 out a_2574_n288# 99.0fF
+C30 a_870_n288# a_1167_n288# 21.1fF
+C31 clk a_1954_n322# 183.7fF
+C32 vdd a_2871_n288# 7.6fF
+C33 clk a_242_n322# 256.2fF
+C34 clk a_6_n288# 17.8fF
+C35 vdd clk 909.8fF
+C36 a_2574_n288# a_2871_n288# 34.0fF
+C37 gnd GND 6088.4fF
+C38 a_2871_n288# GND 790.2fF
+C39 a_2574_n288# GND 1949.7fF
+C40 out GND 1077.5fF
+C41 a_1954_n322# GND 3707.2fF
+C42 a_1718_n288# GND 437.5fF
+C43 a_1167_n288# GND 437.5fF
+C44 a_870_n288# GND 1948.9fF
+C45 a_565_n288# GND 2617.2fF
+C46 a_242_n322# GND 3740.3fF
+C47 in GND 1455.5fF
+C48 a_6_n288# GND 790.2fF
+C49 clk GND 3101.9fF
+C50 vdd GND 4718.6fF

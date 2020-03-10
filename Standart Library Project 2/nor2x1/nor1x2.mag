@@ -1,0 +1,99 @@
+magic
+tech scmos
+timestamp 1494922842
+<< nwell >>
+rect -174 336 192 540
+<< polysilicon >>
+rect -66 510 -46 522
+rect 62 510 82 522
+rect -66 334 -46 360
+rect 62 334 82 360
+rect -66 -242 -46 -216
+rect 62 -242 82 -216
+rect -66 -304 -46 -292
+rect 62 -304 82 -292
+<< electrode >>
+rect 749 -97 768 -92
+<< ndiffusion >>
+rect -116 -250 -66 -242
+rect -116 -284 -108 -250
+rect -74 -284 -66 -250
+rect -116 -292 -66 -284
+rect -46 -248 62 -242
+rect -46 -284 -8 -248
+rect 26 -284 62 -248
+rect -46 -292 62 -284
+rect 82 -250 134 -242
+rect 82 -284 92 -250
+rect 126 -284 134 -250
+rect 82 -292 134 -284
+<< pdiffusion >>
+rect -116 502 -66 510
+rect -116 368 -108 502
+rect -74 368 -66 502
+rect -116 360 -66 368
+rect -46 360 62 510
+rect 82 504 134 510
+rect 82 368 90 504
+rect 124 368 134 504
+rect 82 360 134 368
+<< metal1 >>
+rect -204 556 222 576
+rect -168 532 -124 556
+rect 142 534 186 556
+rect -124 368 -108 502
+rect -66 -194 -46 309
+rect -8 -248 26 40
+rect 62 -194 82 309
+rect 90 66 124 368
+rect 124 40 156 66
+rect -108 -444 -74 -284
+rect -44 -352 -18 -326
+rect -44 -359 78 -352
+rect -44 -422 -18 -359
+rect 64 -422 78 -359
+rect -44 -428 78 -422
+rect -44 -444 -40 -428
+rect -204 -458 -40 -444
+rect -22 -458 56 -428
+rect 74 -444 78 -428
+rect 92 -444 126 -284
+rect 74 -458 222 -444
+rect -204 -464 222 -458
+<< metal2 >>
+rect 26 40 90 66
+<< ntransistor >>
+rect -66 -292 -46 -242
+rect 62 -292 82 -242
+<< ptransistor >>
+rect -66 360 -46 510
+rect 62 360 82 510
+<< polycontact >>
+rect -66 309 -46 334
+rect 62 309 82 334
+rect -66 -216 -46 -194
+rect 62 -216 82 -194
+<< ndcontact >>
+rect -108 -284 -74 -250
+rect -8 -284 26 -248
+rect 92 -284 126 -250
+<< pdcontact >>
+rect -108 368 -74 502
+rect 90 368 124 504
+<< m2contact >>
+rect -8 40 26 66
+rect 90 40 124 66
+<< psubstratepcontact >>
+rect -18 -422 64 -359
+rect -40 -458 -22 -428
+rect 56 -458 74 -428
+<< nsubstratencontact >>
+rect -168 344 -124 532
+rect 142 344 186 534
+<< labels >>
+rlabel metal1 -5 566 -5 566 1 vdd!
+rlabel metal1 -4 -454 -4 -454 1 gnd!
+rlabel metal1 146 53 146 53 1 out
+rlabel metal1 -56 46 -56 46 1 A
+rlabel metal1 72 31 72 31 1 B
+<< end >>

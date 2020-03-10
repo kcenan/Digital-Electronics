@@ -1,0 +1,51 @@
+* SPICE3 file created from xnor.ext - technology: scmos
+
+m1000 a_6_n288# B Vdd Vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=40680p ps=2780u 
+m1001 a_506_n288# A Vdd Vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=0p ps=0u 
+m1002 a_886_464# B Vdd Vdd pfet w=54u l=16u
++ ad=3888p pd=468u as=0p ps=0u 
+m1003 Vdd A a_886_464# Vdd pfet w=54u l=16u
++ ad=0p pd=0u as=0p ps=0u 
+m1004 a_946_n258# a_6_n288# a_886_464# Vdd pfet w=54u l=16u
++ ad=2376p pd=196u as=0p ps=0u 
+m1005 a_886_464# a_506_n288# a_946_n258# Vdd pfet w=54u l=16u
++ ad=0p pd=0u as=0p ps=0u 
+m1006 Out a_946_n258# Vdd Vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=0p ps=0u 
+m1007 a_6_n288# B Gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=13560p ps=1100u 
+m1008 a_506_n288# A Gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=0p ps=0u 
+m1009 a_886_n258# B Gnd Gnd nfet w=18u l=16u
++ ad=792p pd=124u as=0p ps=0u 
+m1010 a_946_n258# A a_886_n258# Gnd nfet w=18u l=16u
++ ad=504p pd=128u as=0p ps=0u 
+m1011 a_1054_n258# a_6_n288# Gnd Gnd nfet w=18u l=16u
++ ad=792p pd=124u as=0p ps=0u 
+m1012 a_946_n258# a_506_n288# a_1054_n258# Gnd nfet w=18u l=16u
++ ad=0p pd=0u as=0p ps=0u 
+m1013 Out a_946_n258# Gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=0p ps=0u 
+C0 Vdd a_886_464# 15.4fF
+C1 Vdd a_946_n258# 37.9fF
+C2 Vdd Out 7.6fF
+C3 a_6_n288# a_886_464# 9.4fF
+C4 a_506_n288# a_886_464# 9.4fF
+C5 Vdd B 51.6fF
+C6 A a_886_464# 9.4fF
+C7 a_506_n288# a_946_n258# 2.7fF
+C8 a_886_464# a_946_n258# 9.4fF
+C9 Vdd a_6_n288# 31.8fF
+C10 Vdd a_506_n288# 31.8fF
+C11 Vdd A 51.6fF
+C12 Gnd GND 3232.8fF
+C13 Out GND 328.6fF
+C14 a_946_n258# GND 804.5fF
+C15 a_886_464# GND 201.3fF
+C16 a_506_n288# GND 842.4fF
+C17 a_6_n288# GND 608.9fF
+C18 A GND 479.8fF
+C19 B GND 500.6fF
+C20 Vdd GND 2477.5fF

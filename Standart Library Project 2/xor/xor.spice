@@ -1,0 +1,70 @@
+* SPICE3 file created from xor.ext - technology: scmos
+
+m1000 a_6_n288# B Vdd Vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=27624p ps=1944u 
+m1001 a_506_n288# A Vdd Vdd pfet w=384u l=20u
++ ad=13056p pd=836u as=0p ps=0u 
+m1002 a_886_464# B Vdd Vdd pfet w=54u l=16u
++ ad=3888p pd=468u as=0p ps=0u 
+m1003 Vdd A a_886_464# Vdd pfet w=54u l=16u
++ ad=0p pd=0u as=0p ps=0u 
+m1004 Out a_6_n288# a_886_464# Vdd pfet w=54u l=16u
++ ad=2376p pd=196u as=0p ps=0u 
+m1005 a_886_464# a_506_n288# Out Vdd pfet w=54u l=16u
++ ad=0p pd=0u as=0p ps=0u 
+m1006 a_6_n288# B Gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=9208p ps=776u 
+m1007 a_506_n288# A Gnd Gnd nfet w=128u l=20u
++ ad=4352p pd=324u as=0p ps=0u 
+m1008 a_886_n258# B Gnd Gnd nfet w=18u l=16u
++ ad=792p pd=124u as=0p ps=0u 
+m1009 Out A a_886_n258# Gnd nfet w=18u l=16u
++ ad=504p pd=128u as=0p ps=0u 
+m1010 a_1054_n258# a_6_n288# Gnd Gnd nfet w=18u l=16u
++ ad=792p pd=124u as=0p ps=0u 
+m1011 Out a_506_n288# a_1054_n258# Gnd nfet w=18u l=16u
++ ad=0p pd=0u as=0p ps=0u 
+C0 Vdd a_506_n288# 31.8fF
+C1 Vdd A 51.6fF
+
+
+* The following two lines are for TRANSIENT analysis
+
+VA     A     0    PULSE(0 2.5 0 10n 1n 8000n 16000n)
+VB     B     0    PULSE(0 2.5 0 10n 1n 10000n 20000n)
+
+vo gnd 0 dc 0
+vh vdd 0 dc 2.5 
+
+
+*     TSTEP TSTOP
+*     ----- -----
+.TRAN 1N  100000N
+
+* TEMPERATURE and OPTIONS SETTING
+
+.OPTIONS TEMP=25 reltol = 1e-6 
+
+*MODELS
+
+.include tsmc_cmos025
+
+.END 
+ 
+C2 Vdd a_886_464# 15.4fF
+C3 Vdd Out 10.5fF
+C4 Vdd B 51.6fF
+C5 a_6_n288# a_886_464# 9.4fF
+C6 a_506_n288# a_886_464# 9.4fF
+C7 A a_886_464# 9.4fF
+C8 a_506_n288# Out 2.7fF
+C9 Vdd a_6_n288# 31.8fF
+C10 a_886_464# Out 9.4fF
+C11 Gnd GND 2297.5fF
+C12 Out GND 332.4fF
+C13 a_886_464# GND 201.3fF
+C14 a_506_n288# GND 842.4fF
+C15 a_6_n288# GND 608.9fF
+C16 A GND 479.8fF
+C17 B GND 500.6fF
+C18 Vdd GND 1686.2fF

@@ -1,0 +1,37 @@
+* SPICE3 file created from inv8x.ext - technology: scmos
+
+m1000 out in vdd vdd pfet w=48u l=20u
++ ad=1632p pd=164u as=1632p ps=164u 
+m1001 out in gnd Gnd nfet w=16u l=20u
++ ad=544p pd=100u as=544p ps=100u 
+C0 vdd in 44.6fF
+C1 vdd out 42.2fF
+C2 gnd GND 464.4fF
+C3 out GND 483.9fF
+C4 in GND 462.7fF
+C5 vdd GND 1658.9fF
+
+
+
+* The following two lines are for TRANSIENT analysis
+
+Vin     in     0    PULSE(0 2.5 0 1n 1n 400n 800n)
+
+vo gnd 0 dc 0
+vh vdd 0 dc 2.5 
+
+
+*     TSTEP TSTOP
+*     ----- -----
+.TRAN 1N  3000N
+.dc Vin 0 2.5 0.1
+
+* TEMPERATURE and OPTIONS SETTING
+
+.OPTIONS TEMP=25 reltol = 1e-6 
+
+*MODELS
+
+.include tsmc_cmos025
+
+.END 

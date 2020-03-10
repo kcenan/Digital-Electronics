@@ -1,0 +1,29 @@
+* HSPICE file created from nand3.ext - technology: scmos
+
+.option scale=1u
+
+m1000 out a_n151_n716 Vdd Vdd pfet w=60 l=30
++ ad=10620 pd=594 as=10320 ps=584 
+m1001 Vdd a_n31_n716 out Vdd pfet w=60 l=30
++ ad=0 pd=0 as=0 ps=0 
+m1002 out a_89_n716 Vdd Vdd pfet w=60 l=30
++ ad=0 pd=0 as=0 ps=0 
+m1003 a_n121_n690 a_n151_n716 GND Gnd nfet w=60 l=30
++ ad=5400 pd=300 as=4920 ps=284 
+m1004 ntype a_n31_n716 a_n121_n690 Gnd nfet w=60 l=30
++ ad=5400 pd=300 as=0 ps=0 
+m1005 out a_89_n716 ntype Gnd nfet w=60 l=30
++ ad=5220 pd=294 as=0 ps=0 
+C0 a_n31_n716 out 27.0fF
+C1 a_89_n716 out 27.0fF
+C2 Vdd a_n31_n716 190.1fF
+C3 Vdd a_89_n716 190.1fF
+C4 Vdd a_n151_n716 190.1fF
+C5 Vdd out 124.1fF
+C6 GND GND 490.2fF
+C7 out GND 1689.2fF
+C8 a_89_n716 GND 1012.7fF
+C9 a_n31_n716 GND 1012.7fF
+C10 a_n151_n716 GND 1012.7fF
+
+** hspice subcircuit dictionary

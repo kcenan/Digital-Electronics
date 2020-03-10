@@ -1,0 +1,54 @@
+* SPICE3 file created from nor1x3.ext - technology: scmos
+
+m1000 a_n46_360# A vdd vdd pfet w=150u l=20u
++ ad=7200p pd=396u as=7500p ps=400u 
+m1001 a_22_360# B a_n46_360# vdd pfet w=150u l=20u
++ ad=6000p pd=380u as=0p ps=0u 
+m1002 out C a_22_360# vdd pfet w=150u l=20u
++ ad=7800p pd=404u as=0p ps=0u 
+m1003 out A gnd Gnd nfet w=50u l=20u
++ ad=3200p pd=328u as=5900p ps=536u 
+m1004 gnd B out Gnd nfet w=50u l=20u
++ ad=0p pd=0u as=0p ps=0u 
+m1005 gnd C out Gnd nfet w=50u l=20u
++ ad=0p pd=0u as=0p ps=0u 
+C0 vdd out 38.4fF
+C1 vdd B 38.6fF
+C2 C out 23.4fF
+C3 B out 23.4fF
+C4 vdd A 38.6fF
+C5 vdd C 38.6fF
+C6 gnd GND 1174.5fF
+C7 out GND 1114.9fF
+C8 C GND 562.6fF
+C9 B GND 562.6fF
+C10 A GND 562.6fF
+C11 vdd GND 466.6fF
+
+
+
+
+* The following two lines are for TRANSIENT analysis
+
+VA       A     0    PULSE(0 2.5 0 10n 1n 10000n 20000n)
+VB       B     0    PULSE(0 2.5 0 10n 1n 12000n 24000n)
+VC       C     0    PULSE(0 2.5 0 10n 1n 14000n 28000n)
+
+vo gnd 0 dc 0
+vh vdd 0 dc 2.5 
+
+
+*     TSTEP TSTOP
+*     ----- -----
+.TRAN 0  120000N 10n
+*.dc Vin 0 2.5 0.1
+
+* TEMPERATURE and OPTIONS SETTING
+
+.OPTIONS TEMP=25 reltol = 1e-6 
+
+*MODELS
+
+.include tsmc_cmos025
+
+.END 

@@ -1,0 +1,32 @@
+Circuit: * C:\Users\CIT\Documents\LTspiceXVII\Draft3.asc
+
+Limiting rise time of source v1 to 1e-010
+Limiting fall time of source v1 to 1e-010
+Instance "m:x3:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x3:2": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x1:2": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x1:2": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x3:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x3:1": Width narrower than recommended for a level 1 MOSFET.
+Instance "m:x1:1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m:x1:1": Width narrower than recommended for a level 1 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Mar 20 13:52:30 2017
+Total elapsed time: 0.075 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2382
+traniter = 2353
+tranpoints = 1087
+accept = 1078
+rejected = 9
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1: 228 bytes object code size  0.1/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.1/0.2
+
+
